@@ -21,6 +21,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: var(--dark-cyan);
+  font-weight: 400;
 }
 
 header {
@@ -47,7 +48,16 @@ header nav .nav-cta {
   color: var(--light-pink);
   padding: 6px 24px;
   border-radius: 23px;
+  font-weight: 600;
   background-color: white;
+}
+
+header nav .nav-cta:hover,
+header .header-content button:hover,
+.build-community button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all ease-in-out 0.2s;
 }
 
 header .header-content {
@@ -67,11 +77,12 @@ header .header-content p {
   margin-bottom: 35px;
 }
 
-header .header-content button {
+header .header-content button,
+.build-community button {
   border: none;
   color: var(--pale-blue);
   background-color: var(--pink);
-  padding: 20px 80px;
+  padding: 18px 80px;
   font-weight: 700;
   border-radius: 33px;
 }
@@ -133,5 +144,239 @@ header .header-content button {
 /* community-content end */
 
 .community-builders {
-  border: 1px solid black;
+  margin-top: 100px;
+}
+
+.community-builders .grow-together {
+  padding: 140px 0 120px 0;
+  background-image: url("images/bg-section-top-desktop-1.svg"), url("images/bg-section-bottom-desktop-1.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain;
+  background-position: top 0 right 0, bottom 0 left 0;
+}
+
+.community-builders .grow-together .background {
+  display: flex;
+  gap: 0 150px;
+  align-items: center;
+  padding: 60px 130px;
+  background-color: var(--pale-blue);
+}
+
+.community-builders .grow-together .section-content {
+  flex-basis: 50%;
+}
+
+.community-builders .grow-together .background .section-content h2,
+.community-builders .flowing-conversations .section-content h2,
+.community-builders .your-users .background .section-content h2,
+.build-community h2 {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 12px;
+}
+
+.community-builders .grow-together .section-img {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: center;
+}
+
+.community-builders .grow-together .section-img img {
+  display: block;
+  width: 100%;
+}
+
+.community-builders .flowing-conversations {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 0 150px;
+  padding: 60px 130px;
+  margin-bottom: 20px;
+}
+
+.community-builders .flowing-conversations .section-content {
+  flex-basis: 50%;
+}
+
+.community-builders .flowing-conversations .section-img {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: left;
+}
+
+.community-builders .flowing-conversations .section-img img {
+  display: block;
+  width: 100%;
+}
+
+.community-builders .your-users {
+  padding: 150px 0 130px 0;
+  background-image: url("images/bg-section-top-desktop-2.svg"), url("images/bg-section-bottom-desktop-2.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain;
+  background-position: top 0 right 0, bottom 0 left 0;
+}
+
+.community-builders .your-users .background {
+  display: flex;
+  align-items: center;
+  padding: 50px 130px;
+  gap: 0 150px;
+  background-color: var(--pale-blue);
+}
+
+.community-builders .your-users .background .section-content {
+  flex-basis: 50%;
+}
+
+.community-builders .your-users .background .section-img {
+  flex-basis: 50%;
+}
+.community-builders .your-users .background .section-img img {
+  width: 100%;
+}
+/* community-builders  end */
+
+.build-community {
+  padding: 100px 0;
+  text-align: center;
+}
+
+footer {
+  padding: 160px 0 0 0;
+  background-image: url("images/bg-footer-top-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top 0 right 0;
+}
+
+footer .container {
+  display: flex;
+  padding: 60px 130px;
+  background-color: var(--dark-cyan);
+}
+
+footer .container .left-content {
+  flex-basis: 50%;
+}
+
+footer .container .left-content .img-footer svg {
+  width: 180px;
+}
+
+footer .container .left-content .img-footer svg g path:first-child {
+  fill: #ffffff;
+}
+
+footer .container .left-content .img-footer svg g path:last-child {
+  fill: #ffffff;
+}
+
+footer .container .left-content > p {
+  color: var(--pale-blue);
+  margin-top: 18px;
+  width: 56%;
+}
+
+footer .container .left-content .phone {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+footer .container .left-content .phone img {
+  width: 16px;
+}
+
+footer .container .left-content .phone p {
+  color: var(--pale-blue);
+}
+
+footer .container .left-content .email {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+footer .container .left-content .email img {
+  width: 16px;
+}
+
+footer .container .left-content .email p {
+  color: var(--pale-blue);
+}
+
+footer .container .left-content .media-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 60px;
+}
+
+footer .container .left-content .media-socials i {
+  color: var(--pale-blue);
+  font-size: 20px;
+  transition: all ease-in-out 0.2s;
+}
+
+footer .container .left-content .media-socials .fa-square-facebook:hover {
+  color: #3b5998;
+  cursor: pointer;
+}
+
+footer .container .left-content .media-socials .fa-instagram:hover {
+  color: #c13584;
+  cursor: pointer;
+}
+
+footer .container .left-content .media-socials .fa-square-twitter:hover {
+  color: #00acee;
+  cursor: pointer;
+}
+
+footer .container .right-content {
+  flex-basis: 50%;
+}
+
+footer .container .right-content h2 {
+  color: var(--pale-blue);
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 4px;
+}
+
+footer .container .right-content p {
+  color: var(--pale-blue);
+  width: 63%;
+  margin-bottom: 24px;
+}
+
+footer .container .right-content form {
+  display: flex;
+  gap: 20px;
+}
+
+footer .container .right-content form input {
+  padding: 8px;
+  width: 70%;
+  border-radius: 4px;
+}
+
+footer .container .right-content form button {
+  width: 30%;
+  font-weight: 700;
+  background-color: var(--pink);
+  color: var(--pale-blue);
+  border-radius: 4px;
+}
+
+footer .container .right-content form button:hover {
+  cursor: pointer;
+  background-color: hsl(321, 100%, 78%);
+  transition: all ease-in-out 0.2s;
 }
