@@ -22,6 +22,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: var(--dark-cyan);
   font-weight: 400;
+  line-height: 1.5;
 }
 
 header {
@@ -33,9 +34,6 @@ header nav {
   display: flex;
   justify-content: space-between;
   margin-bottom: 190px;
-}
-
-header nav .img-nav {
 }
 
 header nav .img-nav img {
@@ -67,7 +65,7 @@ header .header-content {
 header .header-content h1 {
   font-weight: 700;
   font-size: 37px;
-  margin-bottom: 16px;
+  margin-bottom: 25px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -89,9 +87,6 @@ header .header-content button,
 
 /* header end */
 
-.community-content {
-}
-
 .community-content .mockups-img {
   text-align: center;
   margin-bottom: 70px;
@@ -107,12 +102,6 @@ header .header-content button,
   gap: 280px;
 }
 
-.community-content .community-includes .communities-icon {
-}
-
-.community-content .community-includes .communities-content {
-}
-
 .community-content .community-includes .communities-content p:first-child {
   font-size: 62px;
   font-weight: 700;
@@ -123,10 +112,6 @@ header .header-content button,
   font-weight: 600;
   opacity: 0.5;
 }
-
-.community-content .community-includes .communities-formed {
-}
-
 .community-content .community-includes .communities-formed img {
   width: 15%;
 }
@@ -149,7 +134,7 @@ header .header-content button,
 
 .community-builders .grow-together {
   padding: 140px 0 120px 0;
-  background-image: url("images/bg-section-top-desktop-1.svg"), url("images/bg-section-bottom-desktop-1.svg");
+  background-image: url("images/bg-section-top-desktop-1.svg"), url("images/bg-section-bottom-desktop-2.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: contain;
   background-position: top 0 right 0, bottom 0 left 0;
@@ -214,7 +199,7 @@ header .header-content button,
 
 .community-builders .your-users {
   padding: 150px 0 130px 0;
-  background-image: url("images/bg-section-top-desktop-2.svg"), url("images/bg-section-bottom-desktop-2.svg");
+  background-image: url("images/bg-section-top-desktop-1.svg"), url("images/bg-section-bottom-desktop-2.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: contain;
   background-position: top 0 right 0, bottom 0 left 0;
@@ -362,7 +347,7 @@ footer .container .right-content form {
 }
 
 footer .container .right-content form input {
-  padding: 8px;
+  padding: 12px 8px;
   width: 70%;
   border-radius: 4px;
 }
@@ -379,4 +364,405 @@ footer .container .right-content form button:hover {
   cursor: pointer;
   background-color: hsl(321, 100%, 78%);
   transition: all ease-in-out 0.2s;
+}
+
+/* mobile viewport */
+@media only screen and (max-width: 425px) {
+  header {
+    height: 100vh;
+    padding: 35px 20px;
+  }
+
+  header nav {
+    align-items: center;
+    margin-bottom: 130px;
+  }
+
+  header nav .img-nav img {
+    width: 60%;
+  }
+
+  header nav .nav-cta {
+    padding: 6px 0;
+    width: 120px;
+    /* font-size: 14px; */
+  }
+
+  header .header-content {
+    text-align: center;
+  }
+
+  header .header-content h1 {
+    font-size: 27px;
+  }
+
+  header .header-content p {
+    width: auto;
+    margin-bottom: 70px;
+  }
+
+  header .header-content button,
+  .build-community button {
+    padding: 16px 50px;
+  }
+
+  /* header end */
+
+  .community-content {
+    padding: 0 40px;
+  }
+
+  .community-content .mockups-img {
+    margin-bottom: 70px;
+  }
+
+  .community-content .mockups-img img {
+    width: 100%;
+  }
+
+  .community-content .community-includes {
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .community-content .community-includes .communities-formed img {
+    width: 20%;
+  }
+
+  .community-content .community-includes .messages-sent img {
+    width: 18%;
+  }
+
+  .community-content .community-includes .messages-sent .communities-content .messages {
+    font-size: 55px;
+  }
+
+  .community-content .community-includes .messages-sent .communities-content .title {
+    width: 80px;
+    margin: 0 auto;
+  }
+
+  /* community-content end */
+
+  .community-builders .grow-together {
+    padding: 100px 0 90px 0;
+    background-image: url("images/bg-section-top-mobile-1.svg"), url("images/bg-section-bottom-mobile-2.svg");
+    margin-bottom: 100px;
+  }
+
+  .community-builders .grow-together .background {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 100px 150px;
+    padding: 60px 40px;
+  }
+
+  .community-builders .grow-together .section-img {
+    width: 90%;
+  }
+
+  .community-builders .grow-together .section-img img {
+    display: block;
+    width: 100%;
+  }
+
+  .community-builders .grow-together .background .section-content h2 {
+    font-size: 23px;
+  }
+  /* end */
+
+  .community-builders .flowing-conversations {
+    flex-direction: column-reverse;
+    gap: 100px 150px;
+    padding: 60px 40px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .community-builders .flowing-conversations .section-img {
+    width: 90%;
+  }
+
+  .community-builders .flowing-conversations .section-img img {
+    display: block;
+    width: 100%;
+  }
+
+  .community-builders .flowing-conversations .section-content h2 {
+    font-size: 23px;
+  }
+
+  /* end */
+
+  .community-builders .your-users {
+    padding: 100px 0 90px 0;
+    background-image: url("images/bg-section-top-mobile-1.svg"), url("images/bg-section-bottom-mobile-2.svg");
+  }
+
+  .community-builders .your-users .background {
+    flex-direction: column-reverse;
+    padding: 50px 40px;
+    gap: 100px 150px;
+    text-align: center;
+  }
+
+  .community-builders .your-users .background .section-img {
+    width: 90%;
+  }
+  .community-builders .your-users .background .section-img img {
+    width: 100%;
+  }
+
+  .community-builders .your-users .background .section-content h2 {
+    font-size: 23px;
+  }
+  /* community-builders  end */
+
+  .build-community h2 {
+    font-size: 23px;
+  }
+
+  footer {
+    padding: 50px 0 0 0;
+    background-image: url("images/bg-footer-top-mobile.svg");
+  }
+
+  footer .container {
+    flex-direction: column-reverse;
+    padding: 60px 40px;
+  }
+
+  footer .container .left-content .img-footer svg {
+    width: 170px;
+  }
+
+  footer .container .left-content > p {
+    margin-top: 16px;
+    width: auto;
+  }
+
+  footer .container .left-content .phone {
+    margin-top: 45px;
+  }
+
+  footer .container .left-content .media-socials i {
+    font-size: 25px;
+  }
+  /* end */
+
+  footer .container .right-content {
+    margin-bottom: 130px;
+  }
+
+  footer .container .right-content h2 {
+    font-size: 23px;
+    margin-bottom: 12px;
+  }
+
+  footer .container .right-content p {
+    width: auto;
+  }
+
+  footer .container .right-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+  }
+
+  footer .container .right-content form input {
+    width: 100%;
+  }
+
+  footer .container .right-content form button {
+    position: absolute;
+    right: 0;
+    top: 52px;
+    padding: 12px 35px;
+    width: auto;
+  }
+}
+
+/*  */
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+  header {
+    padding: 40px 30px;
+  }
+
+  header nav {
+    margin-bottom: 150px;
+    align-items: center;
+  }
+
+  header nav .img-nav img {
+    width: 70%;
+  }
+
+  header .header-content {
+    text-align: center;
+  }
+
+  header .header-content h1 {
+    width: 80%;
+    font-size: 35px;
+    margin: 0 auto;
+  }
+
+  header .header-content p {
+    margin: 30px auto 60px;
+    width: 65%;
+  }
+
+  /* header end */
+
+  .community-content .mockups-img {
+    padding: 0 40px;
+    margin-bottom: 120px;
+  }
+
+  .community-content .mockups-img img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  /* end */
+
+  .community-content .community-includes {
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+  .community-content .community-includes .communities-formed img {
+    width: 20%;
+  }
+
+  .community-content .community-includes .messages-sent img {
+    width: 18%;
+  }
+
+  .community-content .community-includes .messages-sent .communities-content .messages {
+    font-size: 55px;
+  }
+
+  .community-content .community-includes .messages-sent .communities-content .title {
+    width: 80px;
+    margin: 0 auto;
+  }
+
+  /* community-content end */
+
+  .community-builders .grow-together {
+    padding: 143px 0 128px 0;
+    background-image: url("images/bg-section-top-mobile-1.svg"), url("images/bg-section-bottom-mobile-2.svg");
+    margin-bottom: 100px;
+  }
+
+  .community-builders .grow-together .background {
+    gap: 100px 150px;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 100px 40px;
+  }
+
+  .community-builders .grow-together .section-img img {
+    width: 90%;
+  }
+  /* end */
+
+  .community-builders .flowing-conversations {
+    flex-direction: column-reverse;
+    gap: 100px 150px;
+    padding: 100px 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .community-builders .flowing-conversations .section-img img {
+    display: block;
+    width: 90%;
+  }
+  /* end */
+
+  .community-builders .your-users {
+    padding: 140px 0 128px 0;
+    background-image: url("images/bg-section-top-mobile-1.svg"), url("images/bg-section-bottom-mobile-2.svg");
+  }
+
+  .community-builders .your-users .background {
+    flex-direction: column-reverse;
+    padding: 100px 40px;
+    gap: 100px 150px;
+    text-align: center;
+  }
+
+  .community-builders .your-users .background .section-img img {
+    width: 90%;
+  }
+  /* community-builders  end */
+
+  .build-community {
+    padding: 100px 0 200px;
+  }
+
+  footer {
+    padding: 53px 0 0 0;
+    background-image: url("images/bg-footer-top-desktop.svg");
+  }
+
+  footer .container {
+    flex-direction: column-reverse;
+    padding: 80px 40px;
+  }
+
+  footer .container .left-content .img-footer svg {
+    width: 180px;
+  }
+
+  footer .container .left-content > p {
+    margin-top: 16px;
+    width: auto;
+  }
+
+  footer .container .left-content .phone {
+    margin-top: 45px;
+  }
+
+  footer .container .left-content .media-socials i {
+    font-size: 25px;
+  }
+  /* end */
+
+  footer .container .right-content {
+    margin-bottom: 160px;
+  }
+
+  footer .container .right-content h2 {
+    margin-bottom: 12px;
+  }
+
+  footer .container .right-content p {
+    width: auto;
+  }
+
+  footer .container .right-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+  }
+
+  footer .container .right-content form input {
+    width: 100%;
+  }
+
+  footer .container .right-content form button {
+    position: absolute;
+    right: 0;
+    top: 52px;
+    padding: 12px 35px;
+    width: auto;
+  }
 }
