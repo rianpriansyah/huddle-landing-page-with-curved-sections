@@ -132,12 +132,10 @@ header .header-content button,
   margin-top: 100px;
 }
 
-.community-builders .grow-together {
-  padding: 140px 0 120px 0;
-  background-image: url("images/bg-section-top-desktop-1.svg"), url("images/bg-section-bottom-desktop-2.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: contain;
-  background-position: top 0 right 0, bottom 0 left 0;
+.community-builders .grow-together .background-top-section-grow img,
+.community-builders .grow-together .background-bottom-section-grow img {
+  display: block;
+  width: 100%;
 }
 
 .community-builders .grow-together .background {
@@ -197,12 +195,11 @@ header .header-content button,
   width: 100%;
 }
 
-.community-builders .your-users {
-  padding: 150px 0 130px 0;
-  background-image: url("images/bg-section-top-desktop-1.svg"), url("images/bg-section-bottom-desktop-2.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: contain;
-  background-position: top 0 right 0, bottom 0 left 0;
+.community-builders .your-users .background-top-section-users img,
+.community-builders .your-users .background-bottom-section-users img,
+footer .background-top-footer img {
+  display: block;
+  width: 100%;
 }
 
 .community-builders .your-users .background {
@@ -226,16 +223,8 @@ header .header-content button,
 /* community-builders  end */
 
 .build-community {
-  padding: 100px 0;
+  padding: 150px 0 250px;
   text-align: center;
-}
-
-footer {
-  padding: 160px 0 0 0;
-  background-image: url("images/bg-footer-top-desktop.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top 0 right 0;
 }
 
 footer .container {
@@ -445,12 +434,6 @@ footer .container .right-content form button:hover {
 
   /* community-content end */
 
-  .community-builders .grow-together {
-    padding: 100px 0 90px 0;
-    background-image: url("images/bg-section-top-mobile-1.svg"), url("images/bg-section-bottom-mobile-2.svg");
-    margin-bottom: 100px;
-  }
-
   .community-builders .grow-together .background {
     flex-direction: column-reverse;
     text-align: center;
@@ -495,11 +478,6 @@ footer .container .right-content form button:hover {
 
   /* end */
 
-  .community-builders .your-users {
-    padding: 100px 0 90px 0;
-    background-image: url("images/bg-section-top-mobile-1.svg"), url("images/bg-section-bottom-mobile-2.svg");
-  }
-
   .community-builders .your-users .background {
     flex-direction: column-reverse;
     padding: 50px 40px;
@@ -521,11 +499,6 @@ footer .container .right-content form button:hover {
 
   .build-community h2 {
     font-size: 23px;
-  }
-
-  footer {
-    padding: 50px 0 0 0;
-    background-image: url("images/bg-footer-top-mobile.svg");
   }
 
   footer .container {
@@ -653,12 +626,6 @@ footer .container .right-content form button:hover {
 
   /* community-content end */
 
-  .community-builders .grow-together {
-    padding: 143px 0 128px 0;
-    background-image: url("images/bg-section-top-mobile-1.svg"), url("images/bg-section-bottom-mobile-2.svg");
-    margin-bottom: 100px;
-  }
-
   .community-builders .grow-together .background {
     gap: 100px 150px;
     flex-direction: column-reverse;
@@ -686,11 +653,6 @@ footer .container .right-content form button:hover {
   }
   /* end */
 
-  .community-builders .your-users {
-    padding: 140px 0 128px 0;
-    background-image: url("images/bg-section-top-mobile-1.svg"), url("images/bg-section-bottom-mobile-2.svg");
-  }
-
   .community-builders .your-users .background {
     flex-direction: column-reverse;
     padding: 100px 40px;
@@ -705,11 +667,6 @@ footer .container .right-content form button:hover {
 
   .build-community {
     padding: 100px 0 200px;
-  }
-
-  footer {
-    padding: 53px 0 0 0;
-    background-image: url("images/bg-footer-top-desktop.svg");
   }
 
   footer .container {
